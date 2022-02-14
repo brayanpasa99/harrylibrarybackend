@@ -23,12 +23,12 @@ DROP TABLE IF EXISTS `book`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `book` (
-  `id` bigint NOT NULL,
+  `id_book` bigint NOT NULL,
   `image_url` varchar(255) DEFAULT NULL,
   `price` double NOT NULL,
   `stock` int DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id_book`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -38,7 +38,7 @@ CREATE TABLE `book` (
 
 LOCK TABLES `book` WRITE;
 /*!40000 ALTER TABLE `book` DISABLE KEYS */;
-INSERT INTO `book` VALUES (1,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',41000,1,'Harry Potter y La Piedra Filosofal'),(3,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',39000,5,'Harry Potter y La Cámara Secreta'),(4,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',39000,8,'Harry Potter y El Prisionero de Azkaban'),(5,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',60000,9,'Harry Potter y El Cáliz de Fuego'),(6,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',75000,9,'Harry Potter y La Orden del Fénix'),(7,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',40000,9,'Harry Potter y El Misterio del Príncipe'),(8,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',42000,9,'Harry Potter y Las Reliquias de la Muerte'),(9,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',55000,9,'Harry Potter y El Legado Maldito');
+INSERT INTO `book` VALUES (1,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',41000,0,'Harry Potter y La Piedra Filosofal'),(2,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',39000,1,'Harry Potter y La Cámara Secreta'),(3,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',39000,8,'Harry Potter y El Prisionero de Azkaban'),(4,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',60000,9,'Harry Potter y El Cáliz de Fuego'),(5,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',75000,10,'Harry Potter y La Orden del Fénix'),(6,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',40000,10,'Harry Potter y El Misterio del Príncipe'),(7,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',42000,10,'Harry Potter y Las Reliquias de la Muerte'),(8,'https://cdn-icons-png.flaticon.com/512/1601/1601065.png',55000,10,'Harry Potter y El Legado Maldito');
 /*!40000 ALTER TABLE `book` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-02-13 20:04:03
+-- Dump completed on 2022-02-13 23:29:31
